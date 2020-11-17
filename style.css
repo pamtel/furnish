@@ -1,0 +1,186 @@
+body{
+    font-family: 'Roboto', Times, serif;
+    font-weight: 800;
+}
+
+.bg, #dropdown{
+    background-color: #e7e8ea;
+}
+
+.navbar-nav li a.active{
+    background-color: #facb91 !important;
+}
+
+.bs{
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav li a:hover, footer a:hover{
+    color:  green !important;
+    font-weight: 1000;
+}
+
+.navbar-nav li a{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.bg-transparent{
+    background: transparent !important;
+}
+
+.bg-transparent.scrolled{
+    background: red!important;
+}
+
+.carousel-caption{
+    padding-bottom: 10rem;
+}
+
+.carousel-caption button{
+    padding: 20px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    border: 2px solid#facb91;
+    border-radius: 4em;
+    color: #fff;
+}
+
+.carousel-caption button:hover{
+    color: #facb91;
+}
+
+.overlay{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header{
+    font-size: 50px;
+    font-weight: 800;
+}
+.description{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.so{
+    height: 350px;
+    overflow: hidden;
+    transition: height ease 0.3s;
+}
+
+.so:hover{
+    height: 410px;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.so .card-body{
+    background-color: #f4f4f4;
+}
+
+
+/* second section */
+#second-child .container{
+    transform: translateY(-70px);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1), 0 5px 5px 0 rgba(0,0,0,0.19);
+}
+
+/* about */
+.intro{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: animate 10s ease-in-out infinite;
+}
+
+@keyframes animate{
+    0%,100%{
+        background-image: url('/img/slider6.jpg');
+    }
+    25%{
+        background-image: url('/img/slider7.jpg');
+    }
+    50%{
+        background-image: url('/img/slider2.jpg');
+    }
+}
+
+.outer{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.wrap{
+    color: #ffffff;
+}
+.wrap h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.wrap p {
+    font-size: 20px;
+}
+
+.color{
+    font-size: 50px;
+    font-weight: 900;
+    color:  green;
+}
+
+#about-second-child p{
+    font-weight: 400;
+}
+
+#header-color{
+    color: green;
+}
+
+sub{
+    color:  #facb91;
+    text-decoration: line-through;
+}
+
+/* product */
+.office-background{
+    height: 100vh;
+    width: 100%;
+    background-image: url('/img/slider6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.dining-background{
+    height: 100vh;
+    width: 100%;
+    background-image: url('/img/slider8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bedroom-background{
+    height: 100vh;
+    width: 100%;
+    background-image: url('/img/slider5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.living-background{
+    height: 100vh;
+    width: 100%;
+    background-image: url('/img/slider4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
