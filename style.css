@@ -188,5 +188,14 @@ sub{
     font-size: 20px;
 }
 
+.bl h3{
+    opacity: 0.8;
+}
+
+.bl h3:hover{
+    text-decoration: underline;
+    color: green;
+}
+
 
 
