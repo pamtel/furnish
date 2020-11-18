@@ -182,5 +182,11 @@ sub{
     background-position: center center;
 }
 
+.blog{
+    padding-top: 6em;
+    font-weight: 50;
+    font-size: 20px;
+}
+
 
 
