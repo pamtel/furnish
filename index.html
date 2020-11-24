@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furnish Ltd</title>
+    <title>Blog/Furnish Ltd</title>
     <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.css"> -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap5.css">
     <link rel="stylesheet" href="style.css">
@@ -21,9 +21,15 @@
 <section class="container-fluid bg">
     <nav class="navbar navbar-expand-lg navbar-default bg-transparent sticky-top">
         <div class="container">
-        <a class="navbar-brand text-dark" href="#"><img src="img/logo.png" alt="Logo" srcset="" style="width: 100px; height: 80px;">Furnish Ltd</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand text-dark text-sm-white" href="#"><img src="img/logo.png" alt="Logo" srcset="" style="width: 100px; height: 80px;">Furnish Ltd</a>
+
+        <!-- Our show button -->
+        <button onclick="showMenu()" class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" >
+         <span class="fa fa-bars "></span>
+        </button>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="fa fa-bars text-white"></span> -->
+
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -624,9 +630,59 @@
       </div>
     </footer>
 
+    <!-- our mobile menu -->
+    <div class="menu-container" id="menu">
+      <div class="menu-min p-4 animate__animated animate__fadeInLeft animate_fast">
+        <div class="d-flex justify-content-between align-items-center">
+          <h5 class="mb-0">Furnish Ltd</h5>
+          <span class="fa fa-times" onclick="hideMenu()"></span>
+        </div>
+
+    
+        <ul class="navbar-nav mt-3 m-0">
+          <li class="nav-item">
+            <a class="nav-link text-dark active" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="about.html">ABOUT</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCT</i></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+              <a class="dropdown-item" href="office.html">OFFICE</a>
+              <a class="dropdown-item" href="dining.html">DINNIG</a>
+              <a class="dropdown-item" href="bedroom.html">BEDROOM</a>
+              <a class="dropdown-item" href="living.html">LIVING ROOM</a>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="blog.html">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="showroom.html">SHOWROOM</a>
+        </li>
+          <li class="nav-item">
+              <a class="nav-link text-dark" href="contact.html">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
  <!-- JavaScript Bundle with Popper.js -->
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>    -->
+    <script>
+      // showMenu visible
+      function showMenu(){
+       var b = document.getElementById("menu");
+       b.style.display = "block";
+       b.classList.add("anim");
+      }
+    // hideMenu
+    function hideMenu(){
+      var c = document.getElementById("menu").style.display = "none";
+    }
 
+      
+    </script>
   
 </body>
 </html>
