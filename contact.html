@@ -265,7 +265,7 @@
     myForm.addEventListener("submit", onSubmit);
     function onSubmit(e){
       e.preventDefault();
-      if (nameInput === "" || emailInput === "" || phoneInput === ""){
+      if (nameInput === "" && emailInput === "" && phoneInput === ""){
         msg.classList.add("error");
         msg.innerHTML = "please enter all fields";
         setTimeout(() => msg.remove(), 3000);
@@ -273,9 +273,7 @@
         msg.classList.add("success");
         msg.innerHTML = "details successful";
         setTimeout(() => msg.remove(), 3000);
-        const li = document.createElement("li");
-        li.appendChild(document.createTextNode(`${nameInput.value} : ${emailInput.value} : ${phoneInput}`));
-        // userList.appendChild(li);
+
         // clear fields
         nameInput.value = " ";
         emailInput.value = " ";
